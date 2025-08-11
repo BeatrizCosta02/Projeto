@@ -32,9 +32,51 @@ RNF relacionados:
 
 - Requisitos Funcionais
 
-RF01 - Nome da Requisito Funcional
-Descrição: descritivo
-RN relacionadas:
+RF06 - Manipular Categorias
+Descrição: Criar e listar podutos de uma determinada categoria
+RN relacionadas: RN02
+RF relacionados:
+RNF relacionados:
+
+RF07 - Manipular Order
+Descrição: Abrir e fechar uma order
+RN relacionadas: RN01
+RF relacionados:
+RNF relacionados:
+
+RF08 - Manipular Itens Mesa
+Descrição: Adicionar e retirar itens de uma mesa
+RN relacionadas: RN01
+RF relacionados:
+RNF relacionados:
+
+RF09 - Nova Mesa
+Descrição: Criar nova mesa
+RN relacionadas: RN01
+RF relacionados:
+RNF relacionados:
+
+RF10 - Finalizar
+Descrição: Concluir uma order
+RN relacionadas: RN03
+RF relacionados:
+RNF relacionados:
+
+RF11 - Detalhes Mesa
+Descrição: Pode acessar todos os detalhes da mesa
+RN relacionadas: RN01
+RF relacionados:
+RNF relacionados:
+
+RF12 - Criar Produto
+Descrição: Adicionar um produto no sistema
+RN relacionadas: RN02
+RF relacionados:
+RNF relacionados:
+
+RF13 - Visualizar Orders
+Descrição: Visualiza lista de Orders
+RN relacionadas: RN07
 RF relacionados:
 RNF relacionados:
 
