@@ -1,5 +1,4 @@
-- Regras de Negócios
-
+Regras de Negócio
 RN01 - Relação de Orders
 Descrição: Toda order tem que estar relacionado com uma mesa
 RN relacionadas: 
@@ -28,9 +27,68 @@ RN05 - Cadastros de Usuário
 Descrição: Cada usuário deve ter um cadastro
 RN relacionadas:
 RF relacionados: RF01, RF02
+RNF relacionados: 
+
+RN06 - Criação de Categorias
+Descrição: Só os funcionários que tiverem acesso ao desktop podem criar uma nova categoria
+RN relacionadas:
+RF relacionados: RF06
 RNF relacionados:
 
+RN07 - Permissão de Vizualização da Lista de Orders
+Descrição: Só é possível visualizar a lista de orders em aberto pelo desktop
+RN relacionadas:
+RF relacionados: RF13
+RNF relacionados:
+
+RN08 - Permissão de Manipulação de Orders
+Descrição: Somente o garçom pode manipular os order
+RN relacionadas:
+RF relacionados: RF03, RF11
+RNF relacionados:
+
+RN09 - Segurança das Páginas
+Descrição: Verificar autenticação em páginas privadas
+RN relacionadas:
+RF relacionados: 
+RNF relacionados: RNF01
+
+RN10 - Armazenamento de Imagens
+Descrição: As imagens devem estar armazenadas na nuvem
+RN relacionadas:
+RF relacionados: 
+RNF relacionados: RNF04
+
 - Requisitos Funcionais
+
+RF01 - Criação de usuário
+Descrição: Cadastrar um novo usuário
+RN relacionadas: RN05
+RF relacionados:
+RNF relacionados:
+
+RF02 - Login
+Descrição: Logar um usuário
+RN relacionadas: RN05
+RF relacionados: RNF01
+RNF relacionados:
+
+RF03 - Atualizar
+Descrição: Atualizar a lista de orders pendentes
+RN relacionadas: RN04 
+RF relacionados:
+RNF relacionados:
+
+RF04 - Manipulação de Categorias
+Descrição: Criar e listar categorias dos produtos
+RN relacionadas: RN06 
+RF relacionados:
+RNF relacionados:
+
+RF05 - Número Mesa
+Descrição: Colocar número da mesa
+RN relacionadas: RN01
+RF relacionados:
 
 RF06 - Manipular Categorias
 Descrição: Criar e listar podutos de uma determinada categoria
@@ -75,15 +133,31 @@ RF relacionados:
 RNF relacionados:
 
 RF13 - Visualizar Orders
-Descrição: Visualiza lista de Orders
+Descrição: Visualiza lista de orders
 RN relacionadas: RN07
-RF relacionados:
+
+Requisitos Não Funcionais
+
+RNF01 - Verificação
+Descrição: Verificar autenticação para rotas privadas
+RN Relacionais: 
+RF relacionados: 
 RNF relacionados:
 
-- Requisitos Não Funcionais
+RNF02 - Segurança
+Descrição: Criptografar as senhas dos usuários e proteger seus dados de forma segura (hashing)
+RN Relacionais: 
+RF relacionados: 
+RNF relacionados:
 
-RNF01 - Nome da Requisito Não Funcional
-Descrição: descritivo
-RN relacionadas:
-RF relacionados:
+RNF03 - Rotas
+Descrição: Fazer a ligação das rotas
+RN Relacionais: RN09
+RF relacionados: 
+RNF relacionados:
+
+RNF04 - Ligação com a Nuvem
+Descrição: As imagens estão conectadas com a nuvem
+RN Relacionais: RN10
+RF relacionados: 
 RNF relacionados:
